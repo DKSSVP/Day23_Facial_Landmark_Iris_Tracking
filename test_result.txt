@@ -1,0 +1,62 @@
+DAY 23 - FACIAL LANDMARK AND IRIS TRACKING
+===========================================
+
+Environment:
+Python Version: 3.13.9
+Libraries: OpenCV, MediaPipe
+Model: face_landmarker.task
+
+VERSION 1 - REFERENCE IMPLEMENTATION
+-------------------------------------
+Test Status: PASSED
+
+1. Model file available: PASSED.
+2. MediaPipe model initialization: PASSED.
+3. Webcam initialization: PASSED.
+4. Real-time facial landmark detection: PASSED.
+5. Left and right iris landmark visualization: PASSED.
+6. Iris pixel coordinate display: PASSED.
+7. No-face message handling: PASSED.
+8. Exit-key handling: PASSED.
+9. Webcam cleanup: PASSED.
+
+Observed Results:
+- Total frames processed: 469.
+- Webcam released successfully.
+- Application closed without a reported error.
+
+VERSION 2 - AUTOMATIC SCREENSHOT ENHANCEMENT
+---------------------------------------------
+Test Status: PASSED
+
+1. Model initialization: PASSED.
+2. Webcam initialization: PASSED.
+3. Ten-second continuous face-absence timer: PASSED.
+4. Automatic no-face screenshot capture: PASSED.
+5. Screenshot saved in the project folder: PASSED.
+6. Exit-key handling: PASSED.
+7. Webcam cleanup: PASSED.
+
+Observed Results:
+- Total frames processed: 547.
+- Screenshot saved:
+  no_face_detected_20261029_125737.png
+- Terminal confirmed successful screenshot saving.
+- Webcam released successfully.
+- Application closed without a reported error.
+
+FINAL RESULT
+------------
+Both versions ran successfully in the observed tests.
+
+Version 1 implements the reference facial landmark and
+iris coordinate tracking functionality.
+
+Version 2 includes the same functionality plus automatic
+screenshot capture after ten continuous seconds without
+a detected face.
+
+Note:
+Frame counts and FPS can vary between runs depending on
+hardware, lighting, camera conditions, and processing load.
+
